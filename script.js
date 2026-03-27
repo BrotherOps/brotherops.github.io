@@ -62,7 +62,74 @@ function setupToasts() {
     toast(el.getAttribute("data-toast") || "Coming soon");
   });
 }
+function setupDropdowns() {
+  const dropdownWrappers = Array.from(document.querySelectorAll('[data-dropdown]'));
+  if (!dropdownWrappers.length) return;
+  const supportsHover = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(hover: hover)').matches;
+
+  dropdownWrappers.forEach((wrap) => {
+    const btn = wrap.querySelector('.nav-item-toggle');
+    const menu = wrap.querySelector('.dropdown');
+    if (!btn || !menu) return;
+
+    const setOpen = (isOpen) => {
+      wrap.classList.toggle('nav-item--open', isOpen);
+      btn.setAttribute('aria-expanded', String(isOpen));
+      menu.setAttribute('aria-hidden', String(!isOpen));
+    };
+
+    // initialize
+    setOpen(false);
+
+    if (supportsHover) {
+      // Hover-capable devices: open via CSS :hover and :focus-within.
+      // Add focus handlers so keyboard users get correct aria states.
+      wrap.addEventListener('focusin', () => setOpen(true));
+      wrap.addEventListener('focusout', (e) => {
+        if (!wrap.contains(e.relatedTarget)) setOpen(false);
+      });
+    } else {
+      // Touch / no-hover devices: toggle via click
+      btn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const isOpen = wrap.classList.contains('nav-item--open');
+        setOpen(!isOpen);
+      });
+      // close with Escape when focused inside
+      wrap.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') setOpen(false);
+      });
+    }
+  });
+
+  // click outside to close all
+  document.addEventListener('click', (e) => {
+    dropdownWrappers.forEach((wrap) => {
+      if (!wrap.contains(e.target)) {
+        wrap.classList.remove('nav-item--open');
+        const btn = wrap.querySelector('.nav-item-toggle');
+        const menu = wrap.querySelector('.dropdown');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        if (menu) menu.setAttribute('aria-hidden', 'true');
+      }
+    });
+  });
+
+  // global Escape to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdownWrappers.forEach((wrap) => {
+        wrap.classList.remove('nav-item--open');
+        const btn = wrap.querySelector('.nav-item-toggle');
+        const menu = wrap.querySelector('.dropdown');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        if (menu) menu.setAttribute('aria-hidden', 'true');
+      });
+    }
+  });
+}
 setYear();
 setupNav();
 setupSmoothScroll();
 setupToasts();
+setupDropdowns();

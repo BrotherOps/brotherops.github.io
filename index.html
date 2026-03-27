@@ -24,12 +24,34 @@
           <span class="nav-toggle-bars" aria-hidden="true"></span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#bridge">Bridge</a>
-          <a href="#race">Race</a>
-          <a href="#setups">Setups</a>
-          <a href="#club">Club</a>
-          <a class="btn btn--sm" href="#discord">Join Discord</a>
+          <div class="nav-item nav-item--has-dropdown" data-dropdown>
+            <button class="nav-item-toggle" aria-expanded="false" aria-haspopup="true">About</button>
+            <div class="dropdown" role="menu" aria-hidden="true">
+              <a role="menuitem" href="#discord">Discord</a>
+              <a role="menuitem" href="#club">Club</a>
+              <a role="menuitem" href="#bridge">Bridge</a>
+            </div>
+          </div>
+
+          <div class="nav-item nav-item--has-dropdown" data-dropdown>
+            <button class="nav-item-toggle" aria-expanded="false" aria-haspopup="true">Community</button>
+            <div class="dropdown" role="menu" aria-hidden="true">
+              <a role="menuitem" href="#discord">Discord</a>
+              <a role="menuitem" href="#club">Club</a>
+              <a role="menuitem" href="#bridge">Bridge</a>
+            </div>
+          </div>
+
+          <div class="nav-item nav-item--has-dropdown" data-dropdown>
+            <button class="nav-item-toggle" aria-expanded="false" aria-haspopup="true">Support</button>
+            <div class="dropdown" role="menu" aria-hidden="true">
+              <a role="menuitem" href="#">Privacy</a>
+              <a role="menuitem" href="#">Terms</a>
+              <a role="menuitem" href="#race">FAQ</a>
+            </div>
+          </div>
+
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
