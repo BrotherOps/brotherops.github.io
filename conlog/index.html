@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ConLog Demo</title>
+  <link rel="icon" href="https://codump.github.io/conlog/logo-badge.svg">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="background"></div><div class="background lines"></div>
+  <div class="page">
+    <div class="logo">
+      <img src="logo.svg" alt="ConLog()" class="logoSvg" />
+      <div class="logoLinks">
+        <a href="https://codump.github.io/" target="_blank">Codump</a>
+        <a href="https://codump.github.io/conlog/docs/" target="_blank">Docs</a>
+        <a href="https://www.npmjs.com/package/@codump/conlog" target="_blank">npm</a>
+        <a href="https://github.com/codump/conlog" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="terminal">
+        <div class="terminalHeader">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span>&nbsp;Insert JavaScript</span>
+        </div>
+        <div class="terminalBody" id="inputLog"><div>> ConLogStartMsg(true)</div><div>> ConLog(`String without a type being set`)</div><div>> ConLog({ object: true, withoutType: true, conLog: [`system`, `error`, `ok`, `warning`, `object`] })</div><div>> ConLog(`test1`, `error`)</div><div>> ConLog('test2', 2)</div><div>> ConLog("test3", `wa`)</div><div>> ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, "object")</div></div>
+        <input 
+          class="terminalInput"
+          id="terminalInput"
+          placeholder="Try: ConLog(`This is an error!`, 1)"
+        />
+      </div>
+
+      <div class="terminal">
+        <div class="terminalHeader">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span>&nbsp;Terminal (also in the browsers console)</span>
+        </div>
+        <div class="terminalBody" id="outputLog"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <span style="color: var(--green);">♻</span> Codump | Cheers and enjoy recycling codes! <span style="color: var(--green);">♻</span>
+    </div>
+  </div>
+</body>
+</html>

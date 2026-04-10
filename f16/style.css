@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+body {
+	font-family: 'arimo', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color:#fafafa;
+	background:#1a1919;
+	tab-size:1.3vw;
+	margin: 0;
+}
+a {
+	color:#268df6;
+	text-decoration:none;
+	cursor:pointer;
+}
+a:hover {
+	color:#fafafa;
+}
+.greenButton {
+	display: block;
+	padding: 0.5vw;
+	width:calc(100% - 1vw);
+	background: #00b646;
+	float:left;
+	margin-top:1vh;
+	color:#FFF;
+	letter-spacing: 1px;
+	line-height: 120%;
+	cursor: pointer;
+	border-radius:4px;
+	text-transform: uppercase;
+}
+.greenButton:hover {
+	display: block;
+	background: #06923c;
+	color:#FFF;
+	border-radius:4px;
+}
+.darkGreenButton {
+	display: block;
+	padding: 0.5vw;
+	width:calc(100% - 1vw);
+	background: #087030;
+	float:left;
+	margin-top:1vh;
+	color:#FFF;
+	letter-spacing: 1px;
+	line-height: 120%;
+	cursor: pointer;
+	border-radius:4px;
+	text-transform: uppercase;
+}
+.darkGreenButton:hover {
+	display: block;
+	background: #0b5f2b;
+	color:#FFF;
+	border-radius:4px;
+}
+.green {
+	color:#00b646;
+}
+.clear {
+	clear:both;
+}
+.Fleft {
+	float: left;
+}
+.Fright {
+	float: right;
+}
+label {
+	font-size: 100%;
+	color:#bbb;
+	cursor: pointer;
+	vertical-align: top;
+	text-decoration: underline 1px dashed #888;
+	text-underline-offset: 4px;
+	user-select: none;
+}
+input[type='checkbox'] {
+	/*filter: hue-rotate(280deg);*/
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin-right: 0;
+	/*line-height: 25px;*/
+}
+.inline-label {
+	font-size: 60%;
+	line-height: 200%;
+	margin-left: 3px;
+	vertical-align: text-top;
+}
+
+#wrapper {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+#left {
+	width:18vw;
+	min-width:18vw;
+	height: 100vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	flex-grow: 1;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	resize: horizontal;
+}
+#right {
+	height: 100vh;
+	padding-left: 1vw;
+	flex-grow: 3;
+}
+
+#Lmenu {
+	margin-bottom:3.2vh;
+	background:#1a1919;
+	overflow-y:hidden;
+	overflow-x: hidden;
+	z-index:9800;
+	line-height: 100%;
+}
+#Lmenu h2 {
+	font-size: 130%;
+	font-weight: normal;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	line-height: 100%;
+}
+#Lmenu h2.first {
+	font-size: 130%;
+	font-weight: normal;
+	margin-top:4.3vh;
+	margin-bottom: 2vh;
+	line-height: 100%;
+}
+#Lmenu a {
+	color:#fafafa;
+	text-decoration:none;
+	cursor:pointer;
+}
+#Lmenu a:hover {
+	color:#fff;
+}
+#fullscreenBtn {
+	font-family: 'arimo', Helvetica, Arial, sans-serif;
+	float: right;
+	padding: 0.3vw;
+	margin-top: -0.2vw;
+	color: #FFF;
+	background: transparent;
+	border: 1px solid #FFF;
+	border-radius: 5%;
+	outline: none;
+	cursor: pointer;
+}
+.setDiv {
+	line-height: 150%;
+}
+.setDiv span {
+	user-select: none;
+}
+.sideIcon {
+	margin-left: 0.1vw;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	border:1px solid #333;
+}
+::-webkit-scrollbar-track {
+	background: #252525;
+	margin:2px;
+}
+::-webkit-scrollbar-thumb {
+	background: #353535;
+	cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #268df6;
+}
+
+#main {
+	height: 100vh;
+	line-height: 140%;
+	padding-right: 1vw;
+	overflow: auto;
+}
+#main a {
+	color:#268df6;
+	text-decoration:none;
+	cursor:pointer;
+}
+#main a:hover {
+	color:#fafafa;
+}
+#main h1 a {
+	color:#fafafa;
+	text-decoration:none;
+	cursor:pointer;
+}
+#main h1 a:hover {
+	color:#268df6;
+	text-decoration:none;
+	cursor:pointer;
+}
+#main h1 {
+	font-size: 160%;
+	color:#00b646;
+	font-weight: normal;
+	margin-top:4vh;
+}
+#main hr {
+	height: 1px;
+    background: #353535;
+    border: none;
+	margin-top:3.2vh;
+	margin-bottom:3.2vh;
+}
+#main img {
+	max-width: 100%;
+}
+
+#main table {
+	width: 100%;
+	border: 1px solid #333;
+}
+#main td {
+	line-height: 180%;
+	padding-left:10px;
+	padding-right:10px;
+}
+#main td.td1 {
+	width:130px;
+}
+#main table tr:nth-child(odd) .td1 {
+	color: #CCC;
+	background: #151515;
+}
+#main table tr:nth-child(odd) .td2 {
+	background: #111;
+}
+#main table tr:nth-child(even) .td1 {
+	color: #CCC;
+	background: #111;
+}
+#main table tr:nth-child(even) .td2 {
+	background: #151515;
+}
+#main table img {
+	width: 40px;
+	height: 40px;
+    cursor: pointer;
+}
+#main td.tdI1 {
+	width:40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+#main td.tdI2 {
+	padding-top: 0;
+	padding-bottom: 0;
+	float: left;
+	text-align: left;
+	/* line height same as icons*/
+	line-height: 40px;
+	width: calc(50% - 60px);
+}
+#main table tr:nth-child(odd) .tdI1 {
+	color: #CCC;
+	background: #151515;
+}
+#main table tr:nth-child(odd) .tdI2 {
+	background: #111;
+}
+#main table tr:nth-child(even) .tdI1 {
+	color: #CCC;
+	background: #111;
+}
+#main table tr:nth-child(even) .tdI2 {
+	background: #151515;
+}
+#main .atcList table tr:nth-child(odd) .tdA2 {
+	color: #CCC;
+	background: #151515;
+}
+#main .atcList table tr:nth-child(odd) .tdA1 {
+	background: #111;
+}
+#main .atcList table tr:nth-child(even) .tdA2 {
+	color: #CCC;
+	background: #111;
+}
+#main .atcList table tr:nth-child(even) .tdA1 {
+	background: #151515;
+}
+
+#main h1 a.uncheckstart {
+	font-size: 60%;
+	user-select: none;
+}
+#main .starttable {
+	width: 50%;
+	float: left;
+	font-size: 110%;
+	border-collapse: collapse;
+	border: 0;
+}
+#main .starttable .std1 {
+	width: 25px;
+	font-size: 90%;
+	line-height: 150%;
+	vertical-align: text-top;
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 4px;
+}
+.startlist, .aarlist, .tacanlist {
+	filter: hue-rotate(280deg);
+}
+input[type='checkbox'].startlist, input[type='checkbox'].aarlist, input[type='checkbox'].tacanlist {
+	width: 16px;
+	height: 16px;
+	margin-left: -0.3vw;
+	line-height: 125%;
+}
+.startlabel, .aarlabel, .tacanlabel {
+	font-size: 100%;
+	line-height: 125%;
+	text-decoration: none;
+}
+.startlabel span {
+	font-size: 90%;
+	line-height: 160%;
+	display: inline-block;
+	margin-top: -5px;
+	margin-bottom: 10px;
+}
+.startlabel:hover, .aarlabel:hover, .tacanlabel:hover {
+	color: #FFF;
+}
+.startlabelGreen {
+	color: #00b646;
+}
+.startlabelGreen span {
+	display: none;
+}
+.startlabelGreen:hover {
+	color: #00b646;
+}
+
+.black {
+	background: #000;
+}
+.text-g {
+	color:#999;
+}
+.atcList td {
+	width: 50%;
+}
+
+.fullinfo {
+	color: #ccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-top: 1px dashed #888;
+	border-bottom: 1px dashed #888;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #00000080;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#kneeFolderBtn {
+	display: none;
+	background: #050505;
+	position: fixed;
+	top: 10px;
+	right: 150px;
+	font-size: 30px;
+	height: 42px;
+	width: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 900;
+	user-select: none;
+}
+#kneeBtn {
+	background: #050505;
+	position: fixed;
+	top: 10px;
+	right: 85px;
+	font-size: 30px;
+	height: 42px;
+	width: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 900;
+	user-select: none;
+}
+#kneeboard {
+	background: #151515;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: auto;
+	z-index: 890;
+}
+#emptyknee {
+	color: #666;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 20vh;
+}
+.imageContainer {
+	display: block;
+	height: 100vh;
+	margin: 0 auto;
+}
+.imageContainer img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 100vh;
+}
+
+canvas {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	z-index: 910;
+}
+#drawing {
+	background: #151515;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 910;
+}
+#drawBtn {
+	background: #050505;
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	font-size: 30px;
+	height: 42px;
+	width: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 920;
+	user-select: none;
+}
+#drawBtn.inputActive {
+	position: fixed;
+	top: auto;
+	bottom: 230px;
+	left: 10px;
+}
+#toolbarDraw {
+	background: #050505;
+	position: fixed;
+	top: 75px;
+	right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+	z-index: 910;
+}
+#clearInput {
+	position: fixed;
+	right: 10px;
+	bottom: 230px;
+}
+#drawInput {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	width: calc(100vw - 20px);
+	height: 200px;
+	background: #080808;
+	color: #FFF;
+	font-size: 2rem;
+	outline: 0;
+	border: 0;
+	z-index: 930;
+}
+#clear {
+	margin-top: 5px;
+	cursor: pointer;
+}

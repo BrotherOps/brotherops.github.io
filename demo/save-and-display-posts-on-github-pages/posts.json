@@ -1,0 +1,39 @@
+{
+	"dogs": [
+		{
+			"itemId": "1658945898000",
+			"URLid": "title-of-first-demo-dogs",
+			"title": "Title of the first demo item in the dogs category.",
+			"postedOn": "24 June 2022",
+			"author": "Doglover001",
+			"lastEdit": "-",
+			"category": "Dogs",
+			"imgURL": "https://i.ytimg.com/vi/b43PbeSekDo/maxresdefault.jpg",
+			"content": "The area of cells in the brain that detect different smells is around 40 times larger in dogs than humans. This means that your dog can pick up on way more smells than we ever could. This is why dogs are often used to sniff out people, drugs and even money!<br/><br/>In fact, a number of our own hero hounds were awarded PDSA medals for their noses! Arms and explosives search dog Buster (pictured above) was awarded his PDSA Dickin Medal in 2003 for his remarkable service in Iraq – he located a large amount of weapons and explosives linked to an extremist group, saving the lives of many civilians and service personnel."
+		},
+		{
+			"itemId": "1659377898000",
+			"URLid": "title-of-second-demo-dogs",
+			"title": "Title of the second demo item in the dogs category.",
+			"postedOn": "26 June 2022",
+			"author": "Doglover002",
+			"lastEdit": "-",
+			"category": "Dogs",
+			"imgURL": "https://tractive.com/blog/wp-content/uploads/2016/08/TRNJAWH_01.jpg",
+			"content": "Most dogs could easily outrun a human – they’re built to run and chase! The fastest breed of dog by far, though, is the Greyhound. These speedy sight hounds can reach a top speed of 45mph within seconds of starting to run.<br/><br/>But how does this beat a cheetah? we hear you ask. Well, while a cheetah can get up to almost 70mph, they can only keep this going for around 30 seconds. Greyhounds, on the other hand, could easily run at speeds in excess of 35mph for seven miles. So despite the cheetah’s head start, they’d soon overtake!"
+		}
+	],
+	"cats": [
+		{
+			"itemId": "1659205098000",
+			"URLid": "title-of-first-demo-cats",
+			"title": "Title of the first demo item in the cats category.",
+			"postedOn": "25 June 2022",
+			"author": "Catlover001",
+			"lastEdit": "-",
+			"category": "Cats",
+			"imgURL": "https://media-be.chewy.com/wp-content/uploads/2015/09/06134306/cat-facts-1.jpg",
+			"content": "In Holland’s embassy in Moscow, Russia, the staff noticed that the two Siamese cats kept meowing and clawing at the walls of the building. Their owners finally investigated, thinking they would find mice. Instead, they discovered microphones hidden by Russian spies.<br/><br/>The cats heard the microphones when they turned on. Instead of alerting the Russians that they found said microphones, they simply staged conversations about delays in work orders and suddenly problems were fixed much quicker!"
+		}
+	]
+}

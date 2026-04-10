@@ -24,5 +24,6 @@ package-lock.json
 *.code-workspace
 
 # Misc
+notes.md
 _sass/vendors
 assets/js/dist

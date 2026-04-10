@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>♻ Codump - Dumped codes ♻</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Snippets and scripts of code dumped to re-use over and over again." />
+	<meta name="keywords" content="jQuery, JavaScript, CSS, HTML, PHP" />
+	<meta name="copyright" content="kipBO" />
+	<meta name="author" content="kipBO" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css?v=1.0.1" />
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="jq.js?v=1.0.1"></script>
+</head>
+
+<body>
+
+	<div id="Tmenu">
+		<div id="TmIn">
+			<div id="TmInL">
+				<b><a href="https://codump.github.io/">Co<span>d</span>ump</a></b>
+			</div>
+
+			<div id="TmInR">
+				<a href="https://codump.github.io/#save-and-display-posts-on-github-pages" target="_new">
+					<div id="TmInLI">
+						Back to article
+					</div>
+				</a>
+				<a href="https://github.com/codump" target="_new">
+					<div class="TmInSU">
+						GitHub
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="main">
+		<p>Here you can easily create a new JSON object to add to your JSON file. Copy and paste the output into one of the JSON categories. The <code>itemId</code> value inside the output has set to the unix timestamp and is used to sort automatically by date in all categories. <a href="index.html">Click here to go back to the item page.</a></p>
+		
+		<input type="text" id="title" value="" placeholder="Title" /> <input type="text" id="URLid" value=""
+			placeholder="URL identifier" /> <input type="text" name="postedOn" id="postedOn" value="" placeholder="Posted on" />
+		<input type="text" name="author" id="author" value="" placeholder="Author" /> <input type="text" name="category" id="category" value="" placeholder="Category" /> <input type="text" name="imgURL" id="imgURL" value="" placeholder="Image URL" /><br />
+		<textarea id="content" placeholder="Content.."></textarea>
+		<script type="text/javascript">
+			var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var d = new Date();
+			var day = d.getDate();
+			var year = d.getFullYear();
+			var name = month[d.getMonth()];
+			document.getElementById("postedOn").setAttribute('value', day + ' ' + name + ' ' + year);
+		</script>
+		<br>
+		<input id="test" type="submit" class="greenButton" value="TEST OUTPUT" /> <input id="show" type="submit"
+			class="blueButton" value="SHOW OUTPUT" />
+		<div class="clear"></div>
+		<textarea id="showArea" style="display:none;"></textarea>
+		<div id="testDiv"></div>
+	</div>
+
+</body>
+
+</html>

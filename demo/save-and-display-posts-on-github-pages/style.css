@@ -1,0 +1,246 @@
+/* script */
+#posts {
+	width:100%;
+}
+.midgray {
+	color: #7a7a7a;
+}
+.categoryBtn {
+	display: inline-block;
+	line-height: 1.6vw;
+	padding: 0.1vw 0.5vw;
+	margin-bottom: 0.4vw;
+	margin-right: 0.2vw;
+	background: transparent;
+	border: 1px solid #555;
+	border-radius: 1vw;
+	color: #fafafa;
+	cursor: pointer;
+}
+.categoryBtn:hover {
+	background: #00b646;
+	border: 1px solid #00b646;
+}
+.categoryBtn.active {
+	color: #FFF;
+	background: #268df6;
+	border: 1px solid #268df6;
+}
+.anchor {
+	display: block;
+	position: relative;
+	top: -8vh;
+	visibility: hidden;
+}
+code {
+	font-size: 0.8vw;
+	padding: 2px;
+	background: #151515;
+	border: 1px solid #444;
+	border-radius: 3px;
+	display: inline;
+}
+input {
+	height: 2.4vh;
+	margin-bottom: 1.5vh;
+	padding: 0.2vh;
+	padding-left: 0.5vh;
+	padding-left: 0.5vh;
+	font-size: 0.8vw;
+	border: 2px solid transparent;
+	outline: none;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 1px 1px #252525;
+	-moz-box-shadow: 0px 0px 1px 1px #252525;
+	box-shadow: 0px 0px 1px 1px #252525;
+}
+select {
+	padding: 0.2vh;
+	border-radius: 4px;
+	border: 2px solid transparent;
+	outline: none;
+}
+select:focus {
+	border: 2px solid #268df6;
+	outline: none;
+}
+input:focus {
+	border: 2px solid #268df6;
+	outline: none;
+}
+textarea {
+	padding: 1vh;
+	min-width: calc(100% - 2vh);
+	max-width: calc(100% - 2vh);
+	width: calc(100% - 2vh);
+	min-height: 10vh;
+	height: 10vh;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.9vw;
+	line-height: 1.5vw;
+	color: #fafafa;
+	background: #222;
+}
+.blueButton {
+	display: block;
+	padding: 1vw;
+	background: #268df6;
+	float: left;
+	margin-right: 1vw;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+	color: #FFF;
+	line-height: 0vw;
+	cursor: pointer;
+}
+.blueButton:hover {
+	display: block;
+	padding: 1vw;
+	background: #0f65bb;
+	color: #FFF;
+	line-height: 0vw;
+	border-radius: 4px;
+}
+.blueButton:focus {
+	border: 2px solid transparent;
+}
+.greenButton {
+	display: block;
+	padding: 1vw;
+	background: #00b646;
+	float: left;
+	margin-right: 1vw;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+	color: #FFF;
+	line-height: 0.1vw;
+	cursor: pointer;
+}
+.greenButton:hover {
+	display: block;
+	padding: 1vw;
+	background: #06923c;
+	color: #FFF;
+}
+.greenButton:focus {
+	border: 2px solid transparent;
+}
+.clear {
+	clear: both;
+}
+/* script */
+
+/* demo */
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 0.9vw;
+	line-height: 1.5vw;
+	color: #fafafa;
+	background: #1a1919;
+	tab-size: 1.3vw;
+}
+
+#Tmenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 5.7vh;
+	background: #0e0e0e;
+	color: #fafafa;
+	border-bottom: 1px solid #333;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	z-index: 9999;
+}
+
+#Tmenu a {
+	font-weight: 100;
+	color: #fafafaf1;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#TmIn {
+	width: calc(70vw);
+	height: 3.6vh;
+	margin: 0 auto;
+}
+
+#TmInL {
+	float: left;
+}
+
+#TmInL a {
+	color: #fafafaf1;
+	font-family: 'Megrim', cursive;
+	font-size: 1.8vw;
+	line-height: 5.2vh;
+}
+
+#TmInL a:hover {
+	color: #fafafaf1;
+}
+
+#TmInL a span {
+	color: #00b646;
+}
+
+#TmInR {
+	float: right;
+}
+
+.TmInSU {
+	display: block;
+	float: right;
+	height: 5.7vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: right;
+	line-height: 5.5vh;
+	cursor: pointer;
+}
+
+.TmInSU:hover {
+	background: #EEE;
+}
+
+#TmInLI {
+	display: block;
+	float: right;
+	height: 5.7vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: right;
+	line-height: 5.5vh;
+	cursor: pointer;
+}
+
+#TmInLI:hover {
+	background: #222;
+}
+
+.TmInSU:hover {
+	background: #222;
+}
+#main {
+	margin: 0 auto;
+	margin-top: 7vw;
+	width: 69vw;
+	color: #acacac;
+}
+#main a {
+	color: #00b646;
+	text-decoration: none;
+	cursor: pointer;
+}
+#main a:hover {
+	color: #fafafa;
+}
+#main p {
+	color: #fafafa;
+	margin:4vw 0;
+}
+/* demo */

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 200">
+  <polygon points="120,20 190,60 190,140 120,180 50,140 50,60"
+           fill="url(#grad)" stroke="#00b646" stroke-width="6" />
+  <text x="85" y="130" font-family="Fira Code, monospace"
+        font-size="55" fill="#eeeeee" font-weight="bold">{*}</text>
+  <text x="250" y="130" font-family="Fira Code, monospace"
+        font-size="70" font-weight="bold" fill="#fff">
+    Con<tspan fill="#00b646">Log()</tspan> <tspan fill="#888888">Docs</tspan>
+  </text>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b646"/>
+      <stop offset="100%" stop-color="#00331a"/>
+    </linearGradient>
+  </defs>
+</svg>  

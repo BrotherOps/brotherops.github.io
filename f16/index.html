@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DCS F-16 checklist</title>
+<meta charset="UTF-8">
+<meta name="description" content="Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft." />
+<meta name="keywords" content="DCS, F-16" />
+<meta name="copyright" content="kipBO" />
+<meta name="author" content="kipBO" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:image" content="https://global.discourse-cdn.com/infiniteflight/optimized/3X/3/a/3a5884d0b78817af95b0de07ee420521b76cd7b5_2_819x376.jpg" />
+<!-- Include this to make the og:image larger -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+<link rel="alternate icon" class="js-site-favicon" type="image/png"
+	href="https://github.githubassets.com/favicons/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml"
+	href="https://github.githubassets.com/favicons/favicon.svg">
+<script src="https://kit.fontawesome.com/f072e2e626.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<link rel="stylesheet" href="style.css?v=1.0.21m" />
+
+</head>
+<body onload="">
+
+<div id="wrapper">
+	<div id="left">
+	<div id="Lmenu">
+		<h2 class="first">Settings <button id="fullscreenBtn" onclick="openFullscreen()"><i class="fa-solid fa-expand"></i> Fullscreen</button></h2>
+		<div class="setDiv">
+			<span>Font size:</span> <span id="fontSize">16</span><br/>
+			<input class="none" type="range" min="12" max="24" value="16" id="textSlider" step="0.5"><br/>
+			<label for="info-all">Show/hide all extra information:</label> <input type="checkbox" id="info-all" name="info-all"> <br/>
+			<!--Test value: <span id="test">testDiv</span>-->
+			Kneeboard: <input id="uploader" type="file" webkitdirectory multiple />
+		</div>
+		<h2>F-16 shortcuts</h2>
+		<a href="#prestart" class="greenButton"><i class="fa-regular fa-snowflake fa-fw sideIcon"></i> Cold start</a>
+		<a href="#radar" class="greenButton"><i class="fa-solid fa-satellite-dish fa-fw sideIcon"></i> Radar</a>
+		<a href="#tgp" class="greenButton"><i class="fa-solid fa-bullseye fa-fw sideIcon"></i> Targeting pod</a>
+    <a href="#ecm" class="greenButton"><i class="fa-solid fa-bolt fa-fw sideIcon"></i> ECM pod</a>
+		<a href="#markpoints" class="greenButton"><i class="fa-solid fa-map-pin fa-fw sideIcon"></i> Mark points</a>
+		<a href="#aar" class="greenButton"><i class="fa-solid fa-gas-pump fa-fw sideIcon"></i> AAR</a>
+		<a href="#tacan" class="greenButton"><i class="fa-solid fa-tower-broadcast fa-fw sideIcon"></i> TACAN - ILS - IFR</a>
+		<a href="#atc" class="darkGreenButton"><i class="fa-solid fa-tower-cell fa-fw sideIcon"></i> ATC procedures</a>
+	</div>
+	</div>
+
+	<div id="right">
+	<div id="main">
+		<a name="top" class="anchor"></a>
+		<h1><i class="fa-solid fa-jet-fighter fa-rotate-180 fa-fw"></i> DCS F-16 checklist <i class="fa-solid fa-jet-fighter fa-fw"></i></h1>
+		Welcome to the F-16 checklist, a comprehensive guide designed to demystify the myriad buttons and switches within the cockpit of the F-16 Fighting Falcon. This checklist is your key to understanding the functions associated with each button, ensuring that you have a clear and concise reference for operating this cutting-edge fighter aircraft. The checklist is specifically tailored for optimal use on a compact tablet, ensuring convenience for easy accessibility during your flight.
+		<br/>
+        <a name="prestart" class="anchor"></a><hr/>
+		<h1>EXTERIOR INSPECTION &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1e"> <label for="start1e" class="startlabel"> Wheel Chocks – Request Placed.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2e"> <label for="start2e" class="startlabel"> Rearm/Refuel Menu – Set.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3e"> <label for="start3e" class="startlabel"> Helmet device – Selected.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<h1>VERIFY CHECK &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1v"> <label for="start1v" class="startlabel"> FUEL MASTER switch – MASTER.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2v"> <label for="start2v" class="startlabel"> ENG FEED knob – NORM.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3v"> <label for="start3v" class="startlabel"> EPU switch – NORM.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4v"> <label for="start4v" class="startlabel"> Throttle – OFF.</label></td></tr>
+      <tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5v"> <label for="start5v" class="startlabel"> LG handle – DN and locked.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6v"> <label for="start6v" class="startlabel"> HOOK switch – UP.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7v"> <label for="start7v" class="startlabel"> MASTER ARM switch – OFF.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8v"> <label for="start8v" class="startlabel"> AIR SOURCE knob – NORM.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9v"> <label for="start9v" class="startlabel"> C&I Knob – BACKUP.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10v"> <label for="start10v" class="startlabel"> EXT LIGHTING control panel – As required.<br/><span>a. Anti collision - fl#<br/>b. Position - Steady<br/>c. Wing/Tail - as req (non tac, brt day, dim, night)<br/>d. Fuselage/Form/AR - OFF<br/>e. Taxi/Landing - OFF</span></label></td></tr>
+			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="startlist" id="start11v"> <label for="start11v" class="startlabel"> Ejection safety lever – Safe (up).</label></td></tr>
+			<tr><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start12v"> <label for="start12v" class="startlabel"> MAIN PWR switch – OFF.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<h1>PRE START &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1p"> <label for="start1p" class="startlabel"> MAIN PWR switch – BATT.<br/><span>a. MAIN, STBY, FLCS RLY lights – ON</span></label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start102p"> <label for="start102p" class="startlabel"> AVIONICS - UFC > ON.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start103p"> <label for="start103p" class="startlabel"> Set PRIMARY and AUXILIARY briefed channels.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start2p"> <label for="start2p" class="startlabel"> FLCS PWR TEST switch – TEST and hold.<br/><span>a. FLCS PWR lights (4) – ON<br/>b. ACFT BATT TO FLCS light – ON<br/>c. FLCS RLY light – OFF<br/>d. FLCS PMG light – ON</span></label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start3p"> <label for="start3p" class="startlabel"> FLCS PWR TEST switch – Release.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start4p"> <label for="start4p" class="startlabel"> JFS RUN light – Check OFF.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start5p"> <label for="start5p" class="startlabel"> MAIN PWR switch – MAIN PWR.<br/><span>a. FLCS RLY light – ON<br/>b. ELEC SYS light – ON<br/>c. SEC light – ON<br/>d. ENGINE light – ON<br/>e. HYD/OIL PRESS light – ON</span></label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start6p"> <label for="start6p" class="startlabel"> EPU and EPU PMG light – Confirm OFF.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start7p"> <label for="start7p" class="startlabel"> Communications – Established.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start8p"> <label for="start8p" class="startlabel"> Canopy – As desired.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<br/>
+		<a name="start" class="anchor"></a><hr/>
+		<h1>COLD START &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1"> <label for="start1" class="startlabel"> JFS Switch – As required.<br/><span>a. JFS RUN light – ON within 30 sec<br/>b. ACFT BATT – TO FLCS light<br/>c. FLCS RLY light – OFF<br/>d. FLCS PMG light – PN</span></label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2"> <label for="start2" class="startlabel"> SEC caution light – Check off (~20% RPM).</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3"> <label for="start3" class="startlabel"> Throttle – Advance to IDLE at 20% RPM.<br/><span>a. 25% RPM — HYD/OIL light ON<br/>b. HYD A & B – Above 1000 psi</span></label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4"> <label for="start4" class="startlabel"> ENGINE warning light – OFF at ~55% RPM.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5"> <label for="start5" class="startlabel"> JFS switch – Confirm OFF.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6"> <label for="start6" class="startlabel"> HYD/OIL PRESS warning light – OFF.</label></td></tr>
+		</table>
+		<table class="starttable">
+      <tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start9"> <label for="start9" class="startlabel"> FUEL FLOW – 500-2000 pph.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start12"> <label for="start12" class="startlabel"> OIL pressure – 15 psi (minimum).</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start13"> <label for="start13" class="startlabel"> NOZ POS – Greater than 80%.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start14"> <label for="start14" class="startlabel"> RPM – 65-77%.</label></td></tr>
+			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="startlist" id="start15"> <label for="start15" class="startlabel"> FTIT – 625° or less.</label></td></tr>
+			<tr><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start16"> <label for="start16" class="startlabel"> HYD PRESS A&B – 2850-3250 psi.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<br/>
+        <a name="poststart" class="anchor"></a><hr/>
+		<h1>POST START &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1po"> <label for="start1po" class="startlabel"> TEST switch panel – Check:<br/><span>a. PROBE HEAT switch – TEST<br/>b. Verify caution light flashing<br/>c. PROBE HEAT switch – OFF<br/>d. FIRE & OHEAT DETECT button – Test<br/>e. Verify OVERHEAT caution light<br/>f. Verify ENG FIRE warn lights<br/>g. MAL & IND LTS button – TEST <br/>h. Verify VMS audio messages and light indicators ON</span></label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2po"> <label for="start2po" class="startlabel"> SEC – CHECK:<br/><span>a. Throttle – IDLE for at least 30 sec<br/>b. Brakes – Apply<br/>c. ENG CONT switch – SEC<br/>d. Verify NOZZLE closing to &lt;5%<br/>e. SEC caution light – ON<br/>f. Throttle – Advance to 73% minimum<br/>g. Verify engine response to throttle<br/>h. Throttle – IDLE<br/>i. ENG CONT switch – PRI<br/>j. Verify nozzle opening to >80%<br/>k. SEC caution light – OFF <br/>l. Brakes – Release</span></label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3po"> <label for="start3po" class="startlabel"> EPU – Check:<br/><span>a. OXYGEN – 100%<br/>b. EXT LIGHTING POSITION – FLASH<br/>c. EPU GEN and EPI PMG lights – OFF<br/>d. EPU switch – Confirm NORM<br/>e. Brakes – Apply<br/>f. Throttle – Increase 5%<br/>g. EPU/GEN TEST switch – Hold EPU/GEN<br/>h. EPU AIR light – ON<br/>i. FLCS PWR light – ON<br/>j. EPU RUN light – ON 5 sec minimum<br/>k. EPU/GEN TEST switch – OFF<br/>l. Throttle – Idle<br/>m. Brakes – Release<br/>n. EXT LIGHTING POSITION – Steady<br/>o. OXYGEN – As required</span></label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4po"> <label for="start4po" class="startlabel"> AVIONICS POWER panel – Set.<br/><span>a. MMC switch – MMC<br/>b. ST STA switch – ST STA<br/>c. MFD switch – MFD (24 sec warmup)<br/>d. UFC switch – UFC<br/>e. GPS switch – GPS<br/>f. DL switch – DL (10 sec after MMC)<br/>g. MIDS LVT knob – OFF<br/>h. Altimeter – Set<br/>i. EGI – ALIGN NORM</span></label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5po"> <label for="start5po" class="startlabel"> SNSR PWR panel – Set.<br/><span>a. LEFT HDPT switch – As required<br/>b. RIGHT HDPT switch – As required<br/>c. FCR switch – FCR<br/>d. RDR ALT switch – STBY</span></label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6po"> <label for="start6po" class="startlabel"> HUD – As desired.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7po"> <label for="start7po" class="startlabel"> Ejection seat – Adjust position height.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8po"> <label for="start8po" class="startlabel"> HMCS SYMBOLOGY INT knob – ON and align.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9po"> <label for="start9po" class="startlabel"> IFF MASTER knob – STBY.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10po"> <label for="start10po" class="startlabel"> LMFD – FLCS.</label></td></tr>
+			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="startlist" id="start11po"> <label for="start11po" class="startlabel"> TRIM check – NEUTRAL-NORM.</label></td></tr>
+			<tr><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start12po"> <label for="start12po" class="startlabel"> FLT CONTROL panel: all switches positions looking inward.</label></td></tr>
+			<tr><td class="std1">13</td><td class="std2"><input type="checkbox" class="startlist" id="start13po"> <label for="start13po" class="startlabel"> Flight controls – Cycle.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">14</td><td class="std2"><input type="checkbox" class="startlist" id="start14po"> <label for="start14po" class="startlabel"> FLCS BIT – Initiate and monitor.</label></td></tr>
+			<tr><td class="std1">15</td><td class="std2"><input type="checkbox" class="startlist" id="start15po"> <label for="start15po" class="startlabel"> LMFD – FLCS – BIT PASS message in parallel with FLCS BIT check run:<br/><span>a. Gear lights – Check three green<br/>b. EPU FUEL QUANTITY 95-102%<br/>c. MFDs – As desired<br/>d. Standby Attitude Indicator – Uncage</span></label></td></tr>
+			<tr><td class="std1">16</td><td class="std2"><input type="checkbox" class="startlist" id="start16po"> <label for="start16po" class="startlabel"> CMDS Panel – As required.</label></td></tr>
+			<tr><td class="std1">17</td><td class="std2"><input type="checkbox" class="startlist" id="start17po"> <label for="start17po" class="startlabel"> Speed brakes switch – Cycle.</label></td></tr>
+			<tr><td class="std1">18</td><td class="std2"><input type="checkbox" class="startlist" id="start18po"> <label for="start18po" class="startlabel"> DBU Check:<br/><span>a. Digital BACKUP switch – BACKUP<br/>b. Flight controls – Cycle<br/>c. DBU Warning light – Check on<br/>d. DIGITAL BACKUP switch – OFF</span></label></td></tr>
+			<tr><td class="std1">19</td><td class="std2"><input type="checkbox" class="startlist" id="start19po"> <label for="start19po" class="startlabel"> TRIM CHECK:<br/><span>a. TRIM/AP switch – DISC<br/>b. Trim – Up/Down/Left/Right<br/>c. Trim – Check no effect<br/>d. TRIM/AP switch – NORM</span></label></td></tr>
+			<tr><td class="std1">20</td><td class="std2"><input type="checkbox" class="startlist" id="start20po"> <label for="start20po" class="startlabel"> MPO CHECK.</label></td></tr>
+			<tr><td class="std1">21</td><td class="std2"><input type="checkbox" class="startlist" id="start21po"> <label for="start21po" class="startlabel"> FLCS lights – Check OFF.</label></td></tr>
+			<tr><td class="std1">22</td><td class="std2"><input type="checkbox" class="startlist" id="start22po"> <label for="start22po" class="startlabel"> AR system (if required) – Check.</label></td></tr>
+			<tr><td class="std1">23</td><td class="std2"><input type="checkbox" class="startlist" id="start23po"> <label for="start23po" class="startlabel"> Brakes – Check both channels.</label></td></tr>
+			<tr><td class="std1">24</td><td class="std2"><input type="checkbox" class="startlist" id="start24po"> <label for="start24po" class="startlabel"> Anti-ice – As required.</label></td></tr>
+			<tr><td class="std1">25</td><td class="std2"><input type="checkbox" class="startlist" id="start25po"> <label for="start25po" class="startlabel"> Avionic BIT’s – As desired.</label></td></tr>
+			<tr><td class="std1">26</td><td class="std2"><input type="checkbox" class="startlist" id="start26po"> <label for="start26po" class="startlabel"> Bullseye – ON.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<br/>
+		<a name="pretaxi" class="anchor"></a><hr/>
+		<h1>PRE TAXI &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1pt"> <label for="start1pt" class="startlabel"> Canopy – Close and lock.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2pt"> <label for="start2pt" class="startlabel"> INS knob – NAV.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3pt"> <label for="start3pt" class="startlabel"> MIDS knob – ON.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4pt"> <label for="start4pt" class="startlabel"> C&I knob – UFC.</label></td></tr>
+		</table>
+		<table class="starttable">
+			
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5pt"> <label for="start5pt" class="startlabel"> DTC – Load.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6pt"> <label for="start6pt" class="startlabel"> MIDS initialization – Accomplish.<br/><span>a. DED – Verify NET STATUS page<br/>b. ICP – Depress T-ILS to access page<br/>c. TACAN CHANNEL – Entered<br/>d. HSI – Select TCN or PLS/TCN </span></label></td></tr>
+      <tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7pt"> <label for="start7pt" class="startlabel"> Wheel chocks – Remove.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8pt"> <label for="start8pt" class="startlabel"> Exterior lights – As required.</label></td></tr>
+		</table>
+		<div class="clear"></div>
+		<a name="taxi" class="anchor"></a>
+		<h1>TAXI &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1t"> <label for="start1t" class="startlabel"> Brakes and NWS – Check.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2t"> <label for="start2t" class="startlabel"> Heading – Check.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="beforetakeoff" class="anchor"></a><hr/>
+		<h1>BEFORE TAKEOFF &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1bt"> <label for="start1bt" class="startlabel"> ALT FLAPS switch – NORM.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2bt"> <label for="start2bt" class="startlabel"> Trim – check pitch and yaw centered and roll as required.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3bt"> <label for="start3bt" class="startlabel"> ENG CONT switch – PRI (guard down).</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4bt"> <label for="start4bt" class="startlabel"> Speedbrakes – Closed.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5bt"> <label for="start5bt" class="startlabel"> Canopy – Close, lock, light off.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6bt"> <label for="start6bt" class="startlabel"> IFF – Set and check.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7bt"> <label for="start7bt" class="startlabel"> External tanks - Verify feeding.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8bt"> <label for="start8bt" class="startlabel"> FUEL QTY SEL knob – NORM.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9bt"> <label for="start9bt" class="startlabel"> STORES CONFIG switch – As required.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10bt"> <label for="start10bt" class="startlabel"> Weapons – On, setup and align.</label></td></tr>
+			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="startlist" id="start11bt"> <label for="start11bt" class="startlabel"> TGP – Stow.</label></td></tr>
+			<tr><td class="std1">12</td><td class="std2"><input type="checkbox" class="startlist" id="start12bt"> <label for="start12bt" class="startlabel"> PROBE HEAT switch – PROBE HEAT.</label></td></tr>
+			<tr><td class="std1">13</td><td class="std2"><input type="checkbox" class="startlist" id="start13bt"> <label for="start13bt" class="startlabel"> RDR ALT switch – RDR ALT.</label></td></tr>
+			<tr><td class="std1">14</td><td class="std2"><input type="checkbox" class="startlist" id="start14bt"> <label for="start14bt" class="startlabel"> Ejection safety lever – Arm (down).</label></td></tr>
+			<tr><td class="std1">15</td><td class="std2"><input type="checkbox" class="startlist" id="start15bt"> <label for="start15bt" class="startlabel"> ALOW MSL FLOOR data – Check.</label></td></tr>
+			<tr><td class="std1">16</td><td class="std2"><input type="checkbox" class="startlist" id="start16bt"> <label for="start16bt" class="startlabel"> ECM panel – As required.</label></td></tr>
+			<tr><td class="std1">17</td><td class="std2"><input type="checkbox" class="startlist" id="start17bt"> <label for="start17bt" class="startlabel"> Rotate/T/O speed – Compute.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="inflight" class="anchor"></a><hr/>
+		<h1>CLIMB/IN-FLIGHT-OPERATIONAL CHECKS &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1if"> <label for="start1if" class="startlabel"> Gear lights – Check 3 off.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2if"> <label for="start2if" class="startlabel"> Fuel – Check quantity.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3if"> <label for="start3if" class="startlabel"> FUEL QTY SEL knob – NORM.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4if"> <label for="start4if" class="startlabel"> Engine instruments – Check.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5if"> <label for="start5if" class="startlabel"> HYD PRESS A & B – Check.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="descent" class="anchor"></a>
+		<h1>DESCENT/BEFORE LANDING &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1d"> <label for="start1d" class="startlabel"> MASTER/LASER ARM – OFF.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2d"> <label for="start2d" class="startlabel"> Fuel – Check quantity.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3d"> <label for="start3d" class="startlabel"> Final approach airspeed – Compute.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4d"> <label for="start4d" class="startlabel"> Landing light – ON.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5d"> <label for="start5d" class="startlabel"> Altimeter – Check altimeter setting.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6d"> <label for="start6d" class="startlabel"> ANTI ICE switch – As required.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7d"> <label for="start7d" class="startlabel"> TGP – Stow.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="landing" class="anchor"></a><hr/>
+		<h1>AFTER LANDING &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1l"> <label for="start1l" class="startlabel"> PROBE HEAT switch – OFF.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2l"> <label for="start2l" class="startlabel"> ECM power – OFF.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3l"> <label for="start3l" class="startlabel"> Speedbrakes – Close.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4l"> <label for="start4l" class="startlabel"> Ejection safety lever – Safe (up).</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5l"> <label for="start5l" class="startlabel"> IFF MASTER knob – STBY.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6l"> <label for="start6l" class="startlabel"> IFF M-4 CODE switch – HOLD.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7l"> <label for="start7l" class="startlabel"> LANDING TAXI lights – As required.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8l"> <label for="start8l" class="startlabel"> ZEROIZE switch – As required.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="shutdown" class="anchor"></a>
+		<h1>PRIOR TO ENGINE SHUTDOWN &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1s"> <label for="start1s" class="startlabel"> Canopy handle – Up.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2s"> <label for="start2s" class="startlabel"> C&I knob – BACKUP.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3s"> <label for="start3s" class="startlabel"> Avionics – OFF.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="refuel" class="anchor"></a><hr/>
+		<h1>PRIOR TO HOT REFUELING &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1r"> <label for="start1r" class="startlabel"> AFTER LANDING checks – Complete.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2r"> <label for="start2r" class="startlabel"> AIR REFUEL switch – OPEN; RDY light on.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3r"> <label for="start3r" class="startlabel"> RF switch – SILENT.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4r"> <label for="start4r" class="startlabel"> GND JETT ENABLE switch – OFF.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="refuelok" class="anchor"></a>
+		<h1>HOT REFUELING COMPLETE &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1ro"> <label for="start1ro" class="startlabel"> AIR REFUEL switch – CLOSE.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2ro"> <label for="start2ro" class="startlabel"> RF switch – As required.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3ro"> <label for="start3ro" class="startlabel"> TAXI and BEFORE TAKEOFF checks – Perform.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="flameout" class="anchor"></a><hr/>
+		<h1>FLAMEOUT LANDING &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1fl"> <label for="start1fl" class="startlabel"> Stores – Jettison (if required).</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2fl"> <label for="start2fl" class="startlabel"> Airspeed – 200.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3fl"> <label for="start3fl" class="startlabel"> EPU sw – ON.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4fl"> <label for="start4fl" class="startlabel"> JFS sw – START 2 below 20,000 feet MSL.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5fl"> <label for="start5fl" class="startlabel"> AIR SOURCE knob – RAM (below 25,000 ft).</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="startlist" id="start6fl"> <label for="start6fl" class="startlabel"> DEFOG lever – Forward.</label></td></tr>
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="startlist" id="start7fl"> <label for="start7fl" class="startlabel"> LG handle – DOWN.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="startlist" id="start8fl"> <label for="start8fl" class="startlabel"> ALT GEAR handle – Pull (if required).</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="startlist" id="start9fl"> <label for="start9fl" class="startlabel"> Airspeed – 190 kts optimum in pattern.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="startlist" id="start10fl"> <label for="start10fl" class="startlabel"> After touchdown:<br/><span>a. HOOK sw – DOWN<br/>b. Engage parking brake<br/>c. OXYGEN – 100%<br/>d. AIR SOURCE knob – OFF<br/>e. EPU sw – OFF<br/>f. Shut down the engine</span></label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<a name="fence" class="anchor"></a><hr/>
+		<h1>FENCE IN/OUT CHECK &nbsp;<a class="uncheckstart">Uncheck all in start list.</a></h1>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="startlist" id="start1f"> <label for="start1f" class="startlabel"> <strong>F</strong>irepower, fuel (balanced and inert).</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="startlist" id="start2f"> <label for="start2f" class="startlabel"> <strong>E</strong>mitters.<br/><span>a. TACAN set to A/A or off<br/>b. Radar, RALT and radios<br/>c. ALR and ALQ<br/>d. IFF<br/>e. Lights</span></label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="startlist" id="start3f"> <label for="start3f" class="startlabel"> Navigation.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="startlist" id="start4f"> <label for="start4f" class="startlabel"> <strong>C</strong>haff/flare Armed, and camera on.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="startlist" id="start5f"> <label for="start5f" class="startlabel"> <strong>E</strong>mployment of ECM and Master arm.</label></td></tr>
+		</table>
+
+		<div class="clear"></div>
+		<br/>
+		<a name="radar" class="anchor"></a><hr/>
+		<h1>RADAR <small>(MFD page = FCR)</small> <input type="checkbox" class="all-others" id="info-radar" name="info-radar" value="info-radar" checked> <label for="info-radar" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-radardiv">
+			Symbology CRM / RWS mode:
+			<table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-cursor.jpg" alt="" /></td><td class="tdI2">Cursor with highest and lowest scan altitude.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-steerpoint.jpg" alt="" /></td><td class="tdI2">Steerpoint.</td></tr>
+
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-target.jpg" alt="" /></td><td class="tdI2">Current ping on target, gets darker after ping.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-softlock.jpg" alt="" /></td><td class="tdI2">SAM, Soft-lock.</td></tr>
+
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/RWS-radar-sttlock.jpg" alt="" /></td><td class="tdI2">STT lock.</td></tr>
+			</table>
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">MFD buttons</td></tr>
+			<tr><td class="td1">NORM - EXP</td><td class="td2">NORM, Normal zoomed out view. EXP, Expand zoomed in view.</td></tr>
+			<tr><td class="td1">🡙40 - 🡙80 - 🡙160</td><td class="td2">View range, lines on right side of MFD are 25%, 50% and 75% of the range.</td></tr>
+			<tr><td class="td1">A6 - A2 - A1</td><td class="td2">Azimuth (scan volume left-right) of 60°, 20° and 10° for radar.</td></tr>
+			<tr><td class="td1">1B - 2B - 3B</td><td class="td2">Bar (scan volume up-down) steps for radar.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CRM / RWS mode, Range While Search. <span class="text-g">Shows real-time radar pings.</span></td></tr>
+			<tr><td class="td1">1x TMS up</td><td class="td2">SAM, Situational Awareness Mode. Soft-lock, enemy does not know it's tracked.</td></tr>
+			<tr><td class="td1">2x TMS up</td><td class="td2">STT, Single Track Target.</td></tr>
+			<tr><td class="td1">TMS down</td><td class="td2">Unlock target.</td></tr>
+			<tr><td class="td1">TMS left, short</td><td class="td2">Request IFF, Identification Friend-or-Foe responce.</td></tr>
+			<tr><td class="td1">TMS right, long</td><td class="td2">Switch to CRM / TWS mode.</td></tr>
+			<tr><td class="td1">DMS down</td><td class="td2">Make page SOI.</td></tr>
+			<tr><td class="td1">DMS left</td><td class="td2">Toggle left MFD pages.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CRM / TWS mode, Track While Scan. <span class="text-g">Shows prediction of targets flightpath.</span></td></tr>
+			<tr><td class="td1">1x TMS up</td><td class="td2">Make system target / NO-LOCK</td></tr>
+			<tr><td class="td1">2x TMS up</td><td class="td2">STT, Single Track Target.</td></tr>
+			<tr><td class="td1">TMS right, short</td><td class="td2">With cursor not on any target: Make all targets a system target.</td></tr>
+			<tr><td class="td1">TMS right, short</td><td class="td2">With cursor on a target: LOCK closest target OR switch to next target.</td></tr>
+			<tr><td class="td1">TMS down</td><td class="td2">Unlock target / dump.</td></tr>
+		</table>
+		<a name="tgp" class="anchor"></a><hr/>
+		<h1>TARGETING POD <small>(MFD page = TGP)</small> <input type="checkbox" class="all-others" id="info-tgp" name="info-tgp" value="info-tgp" checked> <label for="info-tgp" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-tgpdiv">
+			There is no extra information at this moment.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">MFD buttons</td></tr>
+			<tr><td class="td1" style="width:160px;">TV - WHOT - BHOT</td><td class="td2">TV, television view. WHOT, white hot IR view. BHOT, black hot IR view.</td></tr>
+			<tr><td colspan="2"></td></tr>
+			<tr class="black"><td colspan="2">CCRP mode, Continuously Computed Release Point. <span class="text-g">Needs to be selected as bombing mode on the weapon page.</span></td></tr>
+			<tr><td class="td1">TMS up</td><td class="td2">Point track (auto-follow).</td></tr>
+			<tr><td class="td1">2x TMS down</td><td class="td2">Center zero, swivel TGP to current STP (steerpoint).</td></tr>
+			<tr><td class="td1">TMS left</td><td class="td2">Cycle TV/WHOT/BHOT.</td></tr>
+			<tr><td class="td1">TMS right</td><td class="td2">Area track (STP) 3x max.</td></tr>
+		</table>
+        <a name="ecm" class="anchor"></a><hr/>
+		<h1>ELECTRONIC COUNTERMEASURE POD <input type="checkbox" class="all-others" id="info-ecm" name="info-ecm" value="info-ecm" checked> <label for="info-ecm" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-ecmdiv">
+            <table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/ECM-transmit-knob.jpg" alt="" /></td><td class="tdI2">ECM transmit knob.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/ECM-buttons.jpg" alt="" /></td><td class="tdI2">ECM buttons.</td></tr>
+			</table><br/>
+			- With the ECM pod, store config needs to be set to 3.<br/>
+            - Startup the ECM by pressing all 6 square buttons on the ECM panel. If they are on they should have an orange S.<br/>
+            - Set the transmit knob to 1 (by default it's set to 3, which means it's continues transmitting and everyone knows where you are).<br/>
+            - Blue T means it's transmitting for jamming.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">CMS buttons</span></td></tr>
+			<tr><td class="td1">CMS down</td><td class="td2">Automatic ECM (green S).</td></tr>
+            <tr><td class="td1">CMS left</td><td class="td2">Chaff and/or flare (depending on program).</td></tr>
+            <tr><td class="td1">CMS right</td><td class="td2">Turn off automatic jamming.</td></tr>
+		</table>
+		<a name="markpoints" class="anchor"></a><hr/>
+		<h1>MARK POINTS <input type="checkbox" class="all-others" id="info-markpoints" name="info-markpoints" value="info-markpoints" checked> <label for="info-markpoints" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-markpointsdiv">
+			<table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/mark-7.jpg" alt="" /></td><td class="tdI2">MARK (7) ICP button.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/m-sel-0.jpg" alt="" /></td><td class="tdI2">M-SEL (0) ICP button.</td></tr>
+				<tr><td class="tdI1" colspan="2"><img src="https://codump.github.io/f16/img/warn-reset.jpg" alt="" /></td><td class="tdI2">Warning reset ICP switch.</td></tr>
+			</table><br/>
+			Remove data notification in HUD: Hit ICP warning reset.
+		</div>
+		<table>
+			<tr class="black"><td colspan="2">Via TGP</span></td></tr>
+			<tr><td class="td1">MARK (7)</td><td class="td2">On ICP opens mark point.</td></tr>
+            <tr><td class="td1">TMS up</td><td class="td2">Send TGP coordinates to ICP/DED.</td></tr>
+            <tr><td class="td1">IFF IN long</td><td class="td2">Send/share data to your flight.</td></tr>
+			<tr class="black"><td colspan="2">Via HMCD</span></td></tr>
+			<tr><td class="td1">MARK (7)</td><td class="td2">On ICP opens mark point.</td></tr>
+            <tr><td class="td1">TMS up long</td><td class="td2">Puts marker on HMCD crosshair.</td></tr>
+            <tr><td class="td1">TMS up</td><td class="td2">Pins marker.</td></tr>
+			<tr><td class="td1">TMS up</td><td class="td2">Send marker coordinates to ICP/DED.</td></tr>
+			<tr><td class="td1">IFF IN long</td><td class="td2">Send/share data to your flight.</td></tr>
+			<tr><td class="td1">Optional</td><td class="td2">To make it a STPT hit M-SEL (0) on ICP.</td></tr>
+		</table>
+		<a name="aar" class="anchor"></a><hr/>
+		<h1>Air-to-air refueling <input type="checkbox" class="all-others" id="info-aar" name="info-aar" value="info-aar" checked> <label for="info-aar" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-aardiv">
+			<table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/air-refuel-switch.jpg" alt="" /></td><td class="tdI2">Air refuel switch.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/ded-data-switch.jpg" alt="" /></td><td class="tdI2">DED data switch.</td></tr>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/list-button.jpg" alt="" /></td><td class="tdI2">List button.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/alow-2.jpg" alt="" /></td><td class="tdI2">ALOW (2) button.</td></tr>
+			</table><br/>
+		</div>
+		<a id="uncheckaar">Uncheck all in list.</a><br/>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="aarlist" id="aar1"> <label for="aar1" class="aarlabel"> Send intent to refuel (\ menu) to tanker which then replies with altitude and speed for refueling.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="aarlist" id="aar2"> <label for="aar2" class="aarlabel"> Add DED data to HUD by switching the DED data switch.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="aarlist" id="aar3"> <label for="aar3" class="aarlabel"> Open list by pressing list button.</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="aarlist" id="aar4"> <label for="aar4" class="aarlabel"> Select list 2 BNGO by pressing the ALOW (2) button.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="aarlist" id="aar5"> <label for="aar5" class="aarlabel"> Open fuel cap by switching air refuel switch (Auto pilot will be disabled).</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="aarlist" id="aar6"> <label for="aar6" class="aarlabel"> Send ready pre-contact (\ menu) to tanker when you're in position.</label></td></tr>
+		</table><div style="clear: both;"></div>
+		<a name="tacan" class="anchor"></a><hr/>
+		<h1>TACAN - ILS - IFR <input type="checkbox" class="all-others" id="info-tacan" name="info-tacan" value="info-tacan" checked> <label for="info-tacan" class="inline-label"> Show extra information.</label></h1>
+		<div class="fullinfo" id="info-tacandiv">
+			<table>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/barometeric-altimeter.webp" alt="" /></td><td class="tdI2">Barometeric altimeter.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/t-ils-1.webp" alt="" /></td><td class="tdI2">T-ILS (1) ICP button.</td></tr>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/dobber.webp" alt="" /></td><td class="tdI2">SEQ dobber.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/entr.webp" alt="" /></td><td class="tdI2">ENTR button.</td></tr>
+				<tr><td class="tdI1"><img src="https://codump.github.io/f16/img/m-sel-0.jpg" alt="" /></td><td class="tdI2">M-SEL (0) ICP button.</td><td class="tdI1"><img src="https://codump.github.io/f16/img/hsi.webp" alt="" /></td><td class="tdI2">HSI, M button and CRS knob.</td></tr>
+			</table><br/>
+			- If a TACAN channel doesn't have a band mentioned on the map, you should use X-ray.<br/>- The TACAN has 3 modes, namely: REC = receive, T/R = transmit and receive, A/A TR = air to air transmit and receive. They are shown by the DED when on the TACAN - ILS page.<br/>- For IFR you need to be at 300 feet AGL for every mile out. Don't forget to set the barometeric altimeter correctly. Contact approach and request landing, they will reply with the QFE that you need to set in the barometer.<br/><br/><span style="color:#FFF;">Cheatsheet true heading(shown in the F10 map) to magnetic heading.</span><br/>
+			Caucasus: -6° Germany: -4° Syria: -4/5° Persian Gulf: -2° Mariana: -1° Nevada: -12° Normandy(Modern): +1° Normandy(1944 WWII): +11/12°<br/>
+		</div>
+		<a id="unchecktacan">Uncheck all in list.</a><br/>
+		<table class="starttable">
+			<tr><td class="std1">1</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan1"> <label for="tacan1" class="tacanlabel"> Set the barometeric altimeter correctly for the airfield.</label></td></tr>
+			<tr><td class="std1">2</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan2"> <label for="tacan2" class="tacanlabel"> Hit the T-ILS button on the ICP.</label></td></tr>
+			<tr><td class="std1">3</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan3"> <label for="tacan3" class="tacanlabel"> Set the desired mode by using the SEQ on the dobber.</label></td></tr>
+			<tr><td class="std1">4</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan4"> <label for="tacan4" class="tacanlabel"> Dobber down, enter the channel number and hit ENTR.</label></td></tr>
+			<tr><td class="std1">5</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan5"> <label for="tacan5" class="tacanlabel"> If needed change the BAND by hitting the M-SEL button.</label></td></tr>
+			<tr><td class="std1">6</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan6"> <label for="tacan6" class="tacanlabel"> Set ILS FRQ and CRS(magnetic).</label></td></tr>
+		</table>
+		<table class="starttable">
+			<tr><td class="std1">7</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan7"> <label for="tacan7" class="tacanlabel"> Set the HSI to TCN via the M(mode) button.</label></td></tr>
+			<tr><td class="std1">8</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan8"> <label for="tacan8" class="tacanlabel"> Set the desired course with the CRS knob.</label></td></tr>
+			<tr><td class="std1">9</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan9"> <label for="tacan9" class="tacanlabel"> Once the approach is lined up switch the HSI to mode PLS/TCN.</label></td></tr>
+			<tr><td class="std1">10</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan10"> <label for="tacan10" class="tacanlabel"> Fly the ILS steering cue(circle in HUD) into the flight vector.</label></td></tr>
+			<tr><td class="std1">11</td><td class="std2"><input type="checkbox" class="tacanlist" id="tacan11"> <label for="tacan11" class="tacanlabel"> Land without dying!</label></td></tr>
+		</table><div style="clear: both;"></div>
+		<a name="atc" class="anchor"></a><hr/>
+		<h1>Air Traffic Control procedures</h1>
+		<div class="atcList">
+			STARTUP
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] TOWER, this is [CALL SIGN] (formation) REQUEST STARTUP (intentions: eg. VFR 	DEPARTURE TRAINING AREA ALPHA)</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] (formation) START UP APPROVED, QNH [XXXX] [CS] CONDITIONS</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: QNH (read back) [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			CLEARANCE
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] REPORT READY TO COPY ATC CLEARANCE</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] TOWER, [CALL SIGN] READY FOR CLEARANCE</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] (FORMATION) CLEARED FOR VFR DEPARTURE TO [ZONE] EXIT [REPORTING POINT] SQUAWK XXXX WHEN AIRBORNE CONTACT APPROACH CHANNEL 3</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [READBACK]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			TAXI
+			<table>
+				<tr>
+					<td class="green">TAXI BEFORE TAKEOFF</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] TOWER, [CALL SIGN] (FORMATION, N F-16) (AT PARKING XXX) REQUEST TAXI</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] (FORMATION) TAXI TO HOLDING POINT RUNWAY XX VIA XY, SQUAWK IN SEQUENCE</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [READBACK] SQUAWK IN SEQUENCE</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="green">TAXI AFTER LANDING</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALL SIGN] RUNWAY VACATED</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] TAXI VIA [A|B|C|D] TO STAND XX</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: VIA X TO STAND Y [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			TAKEOFF
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] TOWER, [CALL SIGN] READY FOR DEPARTURE</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] WIND XXX DEGREES XX KNOTS RUNWAY XX CLEARED FOR TAKEOFF, REPORT AIRBORNE</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: RUNWAY XX CLEARED FOR TAKEOFF [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALLSIGN] AIRBORNE</td>
+					<td class="tdA2">ATC: [CALLSIGN] ROGER</td>
+				</tr>
+			</table><br/>
+			DEPARTURE
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] APPROACH, [CALLSIGN] VFR DEPARTURE EXIT XXX</td>
+					<td class="tdA2">ATC: [CALLSIGN] ROGER</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] LEAVING THE ZONE, REGIONAL QNH XXXX, (MONITOR [AIRPORT] RADAR ON CHANNEL 11)</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: XXXX ([AIRPORT] RADAR CHANNEL 11) [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			ARRIVAL
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] APPROACH, [CALL SIGN], (position, altitude) REQUEST LANDING INSTRUCTIONS FOR VISUAL APPROACH</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] [RUNWAY] QNH XXXX, [CONDITION] REPORT ENTRY [XXX]</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [RUNWAY] [QNH] REPORTING ENTRY [XXX] [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALL SIGN] ENTERING XXX</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] CONTACT [AIRPORT] TOWER CHANNEL 2</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: TOWER CHANNEL 2 [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			HANDOVER TO TOWER
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] WHEN VACATING THE RUNWAY, CONTACT [AIRPORT] TOWER CHANNEL 2</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [READBACK]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table><br/>
+			LANDING (VFR)
+			<table>
+				<tr>
+					<td class="tdA1">Pilot: [AIRPORT] TOWER [CALL SIGN] (FORMATION) AT ENTRY XXX XXXXFT FOR LANDING / TOUCH AND GO</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] (FORMATION) JOIN INITIAL [RUNWAY NUMBER] (LEFT HAND) BREAK QNH XXX</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: QNH XXXX [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALL SIGN] (FORMATION) INITIAL RUNWAY XX FOR LANDING</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] (FORMATION) BREAK [number of how many people are in front] WIND XXX DEGREES XX KNOTS</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: BREAK [NUMBER] [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALL SIGN] ON THE BREAK</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] FINAL [NUMBER]</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: FINAL [NUMBER], [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: [CALL SIGN] FINAL GEAR DOWN TO LAND</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: -</td>
+					<td class="tdA2">ATC: [CALL SIGN] RUNWAY XX CLEARED TO LAND</td>
+				</tr>
+				<tr>
+					<td class="tdA1">Pilot: RUNWAY XX CLEARED TO LAND [CALL SIGN]</td>
+					<td class="tdA2">ATC: -</td>
+				</tr>
+			</table>
+			<hr/>
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+<div id="overlay">
+    <div id="overlayContent"></div>
+</div>
+
+<div id="kneeFolderBtn" title="Toggle kneeboard folders">📁</div>
+<div id="kneeBtn" title="Toggle kneeboard">📋️</div>
+<div id="kneeboard">
+	<div id="emptyknee">Upload kneeboard folder in the left side menu.</div>
+</div>
+
+<canvas id="drawing"></canvas>
+<div id="drawBtn" title="Toggle notepad">✏️</div>
+<div id="toolbarDraw">
+  <label for="stroke">Color</label><br/>
+  <input id="stroke" name='stroke' type="color" value="#FFFFFF"><br/>
+  <button id="clear">Clear</button>
+	<button id="clearInput">Clear input</button>
+	<textarea id="drawInput" placeholder="You can type in this field..."></textarea>
+</div>
+
+<script src="script.js?v=1.0.3m" type="text/javascript"></script>
+</body>
+</html>
