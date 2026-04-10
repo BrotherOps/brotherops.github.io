@@ -53,7 +53,7 @@ jobs:
             --disable-external \
             --allow-hash-href \
             --ignore-empty-alt \
-            --ignore-dirs "/conlog/docs/","/f16/" \
+            --ignore-files "/_site\/conlog\/docs\/.*/,/_site\/f16\/.*/" \
             --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact
