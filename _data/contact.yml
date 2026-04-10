@@ -10,6 +10,14 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: discord
+  icon: 'fab fa-discord'
+  url: 'https://codump.github.io/go/discord/'
+
+- type: robot
+  icon: 'fas fa-robot'
+  url: 'https://codump.github.io/go/bot-hosting/' # De link waar de robot naar toe moet
+
 - type: rss
   icon: "fas fa-rss"
   noblank: true
